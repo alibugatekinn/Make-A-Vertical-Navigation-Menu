@@ -1,0 +1,83 @@
+<div class="kutu-container">
+    <div class="kutu">
+        <a href="#">
+      <img src="https://cdn-icons-png.flaticon.com/512/2232/2232688.png" alt="Flaticon Logo">
+    </a>
+      <div class="kutu-icerik">section 1</div>
+    </div>
+    <div class="kutu">
+        <a href="#">
+      <img src="https://cdn-icons-png.flaticon.com/512/10329/10329158.png" alt="Flaticon Logo">
+    </a>
+      <div class="kutu-icerik">section 2</div>
+    </div>
+    
+    <div class="kutu">
+        <a href="#">
+      <img src="https://cdn-icons-png.flaticon.com/512/2704/2704312.png" alt="Flaticon Logo">
+    </a>
+      <div class="kutu-icerik">section 3</div>
+    </div>
+    <div class="kutu">
+        <a href="#">
+      <img src="https://cdn-icons-png.flaticon.com/512/1321/1321635.png" alt="Flaticon Logo">
+    </a>
+      <div class="kutu-icerik">section 4</div>
+    </div>
+  </div>
+  
+  <style>
+      .kutu-container {
+    position: fixed;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+  
+  .kutu {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 2.5px solid white;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  .kutu-icerik {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 200px;
+    height: 40px;
+    background-color: black;
+    color: black;
+    text-align: center;
+    padding-top: 5px;
+    transform-origin: right center;
+    transform: rotateY(-90deg) translateX(100%) translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+  
+  .kutu:hover .kutu-icerik {
+    opacity: 1;
+    transform: rotateY(0deg) translateX(0%) translateY(-50%);
+    background-color: white;
+    
+  }
+  
+  .kutu img {
+      width: 70%;
+      height: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  
+  </style>
